@@ -8,6 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="TextBox" Width="206" Background="#FFC8FB5B" Margin="368,0,1346,999"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" Width="206" Background="#FFC8FB5B" Margin="368,0,1346,999"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="1070" Margin="948,2,0,0" VerticalAlignment="Top" Width="965">
+            <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="333,0,0,0"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="310,0,0,0" TextWrapping="Wrap" Text="TextBlock"/>
+        </ComboBox>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="1060" Margin="47,10,0,0" VerticalAlignment="Top" Width="858"/>
 
     </Grid>
 </Page>

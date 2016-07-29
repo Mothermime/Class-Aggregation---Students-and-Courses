@@ -22,9 +22,16 @@ namespace Class_Aggregation___Students_and_Courses
     /// </summary>
     public sealed partial class MainPage : Page
     {
+ Student myStudent = new Student();
         public MainPage()
         {
             this.InitializeComponent();
+
+            LoadComboBox();
+            {
+                cbxStudent.Items.Add("Counselling");
+                cbxStudent
+            }
         }
     }
 }
