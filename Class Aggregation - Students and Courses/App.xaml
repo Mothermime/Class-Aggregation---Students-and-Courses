@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="Class_Aggregation___Students_and_Courses.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Class_Aggregation___Students_and_Courses"
+    RequestedTheme="Light">
+
+</Application>
