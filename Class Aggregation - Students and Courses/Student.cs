@@ -10,8 +10,11 @@ namespace Class_Aggregation___Students_and_Courses
     {
         //fields - internal working in the class.
         private string _fname;
+        private string _fullname;
+        private string Business;
+        private string WishyWashylifeSkills;
 
-        //attached Class that you assed in 
+        //attached Class that you added in 
         public String City { get; set; }
         public Business business { get; set; }
         public Counselling counselling { get; set; }

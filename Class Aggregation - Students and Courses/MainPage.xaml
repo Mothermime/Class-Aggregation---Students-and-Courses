@@ -7,14 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="TextBox" Width="206" Background="#FFC8FB5B" Margin="368,0,1346,999"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" Width="206" Background="#FFC8FB5B" Margin="368,0,1346,999"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="1070" Margin="948,2,0,0" VerticalAlignment="Top" Width="965">
-            <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="333,0,0,0"/>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="310,0,0,0" TextWrapping="Wrap" Text="TextBlock"/>
-        </ComboBox>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="1060" Margin="47,10,0,0" VerticalAlignment="Top" Width="858"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="941,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="249*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="277*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="-57,-59,0,0" Grid.ColumnSpan="2" RenderTransformOrigin="0.076,0.267">
+            <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130,722,-856,-707" Height="85" Width="826" Click="btnAdd_Click" RenderTransformOrigin="0.644,0.529" FontFamily="Tahoma" FontSize="24" Background="#33061997"/>
+            <TextBox x:Name="txtFirstName" TextWrapping="Wrap" Text="" Background="#FFC8FB5B" Margin="179,219,-399,-200" FontFamily="Tahoma" FontSize="24"/>
+            <ComboBox x:Name="cbxStudent" HorizontalAlignment="Left" VerticalAlignment="Top" Width="498" Height="107" Margin="289,511,-687,-518" FontWeight="Bold" FontFamily="Tahoma" FontSize="24" Background="#66C1DDF9"/>
+            <TextBox x:Name="txtLastName" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" Width="320" Background="#FFC8FB5B" Margin="573,219,-793,-200" FontFamily="Tahoma" FontSize="24"/>
+            <TextBox x:Name="txtFullname" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="107" Margin="254,352,-737,-359" Width="583" FontFamily="Tahoma" FontSize="24" Background="#FFBFF7ED"/>
+            <TextBlock x:Name="tbFirstName" HorizontalAlignment="Left" Margin="179,184,-216,-128" TextWrapping="Wrap" Text="First Name" Width="137" RenderTransformOrigin="1.277,0.455"/>
+            <TextBlock x:Name="tbLastName" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Last Name" Width="132" Margin="573,184,-605,-131"/>
+        </Grid>
+        <ListBox x:Name="lbxDetails" HorizontalAlignment="Left" Height="1024" VerticalAlignment="Top" Width="848" Margin="-910,28,0,0" FontFamily="Tahoma" FontWeight="Bold" Grid.RowSpan="3" FontSize="24" Background="#FFF7F5C8"/>
 
     </Grid>
 </Page>
